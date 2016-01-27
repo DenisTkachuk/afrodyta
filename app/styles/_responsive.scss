@@ -1,0 +1,49 @@
+@media all and (min-width: 768px) {
+    header {
+        min-height: 210px;
+        padding-top: 94px;
+        .nav-main {
+            li {
+                padding: 0;
+                position: relative;
+                overflow: hidden;
+                a {
+                    color: #000;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    padding: 0 20px 5px;
+                    display: block;
+                    span {
+                        display: block;
+                        &::after {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            width: 100%;
+                            border-bottom: 2px solid #000;
+                            bottom: -5px;
+                            transition: 0.3s ease;
+                        }
+                    }
+                    &:hover, &:focus {
+                        text-decoration: none;
+                        span::after {
+                            bottom: 2px;
+                        }
+                    }
+                }
+                &.active {
+                    span::after {
+                        bottom: 2px;
+                    }
+                }
+                &:last-child {
+                    a {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
