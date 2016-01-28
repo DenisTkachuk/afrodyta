@@ -175,4 +175,23 @@
             line-height: 30px;
         }
     }
+    .img-box {
+        .col-md-4.col-xs-12 {
+            position: relative;
+            h2 {
+                position: absolute;
+                top: 50%;
+                text-align: center;
+                width: 100%;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 79.02px;
+                line-height: 88px;
+                font-weight: 900;
+                text-shadow: 0 0 20px rgba(0,0,0,.7);
+                margin-top: -44px;
+
+            }
+        }
+    }
 }
