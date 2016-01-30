@@ -78,6 +78,13 @@
             }
         }
     }
+    .big-padding {
+        padding: 0 60px;
+        line-height: 30px;
+    }
+    section, footer {
+        margin-top: 100px;
+    }
 
     // header
     header {
@@ -136,6 +143,7 @@
         background: url('../images/banner__img.jpg') no-repeat;
         display: table;
         width: 100%;
+        margin-top: 0;
         margin-bottom: 70px;
         //vertical-align: middle;
         h2 {
@@ -196,10 +204,6 @@
     }
     .content-box {
         margin-bottom: 100px;
-        p {
-            padding: 0 60px;
-            line-height: 30px;
-        }
     }
     .img-box {
         .col-md-4.col-xs-12 {
@@ -217,6 +221,53 @@
                 text-shadow: 0 0 20px rgba(0,0,0,.7);
                 margin-top: -44px;
 
+            }
+        }
+    }
+    footer {
+        .social {
+            margin-top: 50px;
+            margin-bottom: 80px;
+            li > a {
+                display: block;
+                background: #ccc;
+                text-align: center;                
+                i {
+                    width: 38px;
+                    font-size: 26px;
+                    line-height: 38px;
+                    color: #fff;
+                }
+                &.facebook {
+                    background: #205b9f;
+                    &:hover, &:focus {
+                        background: lighten(#205b9f , 15%);
+                    }
+                }
+                &.twitter {
+                    background: #00ace3;
+                    &:hover, &:focus {
+                        background: lighten(#00ace3 , 15%);
+                    }
+                }
+                &.youtube {
+                    background: #ff4d3f;
+                    &:hover, &:focus {
+                        background: lighten(#ff4d3f , 15%);
+                    }
+                }
+                &.dribble {
+                    background: #ff72a5;
+                    &:hover, &:focus {
+                        background: lighten(#ff72a5 , 15%);
+                    }
+                }
+                &.instagram {
+                    background: #2e7fa6;
+                    &:hover, &:focus {
+                        background: lighten(#2e7fa6 , 15%);
+                    }
+                }
             }
         }
     }
