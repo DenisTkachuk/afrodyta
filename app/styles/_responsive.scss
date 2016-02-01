@@ -6,11 +6,14 @@
     body {
         color: #000;
         font-size: 15px;
-        line-height: 20px;
+        line-height: 30px;
     }
     .container {
         max-width: 1140px;
         padding: 0;
+    }
+    .relative {
+      position: relative !important;
     }
     .row {
         .col-md-6 {
@@ -161,8 +164,52 @@
 
     // first-new
     .first-new {
+        > .row > .col-md-6.col-xs-12 p {
+          padding-right: 30%;
+        }
         .img-responsive {
             float: right;
+        }
+        .relative {
+          .lines {
+            position: absolute;
+            top: 50%;
+            left: -150px;
+            .line {
+              height: 5px;
+              background: #000;
+              width: 266px;
+              display: block;
+              margin-bottom: 37px;
+              z-index: 10;
+              position: relative;
+              overflow: hidden;
+              &::after {
+                display: block;
+                content: '';
+                background: #fff;
+                height: 5px;
+                position: absolute;
+                width: 86px;
+                right: 0;
+              }
+              &.second {
+                width: 248px;
+                left: 30px;
+                &::after {
+                  width: 98px;
+                }
+              }
+              &.third {
+                width: 258px;
+                left: 10px;
+                &::after {
+                  width: 88px;
+                }
+              }
+            }
+
+          }
         }
     }
     .jumbotron.newsletter {
@@ -231,7 +278,7 @@
             li > a {
                 display: block;
                 background: #ccc;
-                text-align: center;                
+                text-align: center;
                 i {
                     width: 38px;
                     font-size: 26px;
