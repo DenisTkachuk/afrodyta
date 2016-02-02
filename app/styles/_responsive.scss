@@ -187,6 +187,36 @@
             }
         }
     }
+    .bottom-item {
+        h2 {
+            margin-top: -30px;
+            text-align: right;
+            margin-bottom: 50px;
+        }
+        p {
+            margin-bottom: 25px;
+        }
+        .left {
+            z-index: 10;
+        }
+        .right {
+            * {
+                z-index: 9;
+                position: relative;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 1000px;
+                height: 436px;
+                background: #f6f6f6;
+                top: 85px;
+                right: 87px;
+                z-index: 1;
+            }
+        }
+    }
     footer {
         .social {
             margin-top: 50px;
