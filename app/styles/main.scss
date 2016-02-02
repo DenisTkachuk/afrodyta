@@ -39,6 +39,9 @@ h2.bold {
     line-height: 70px;
     font-weight: 700;
     text-transform: uppercase;
+    .smaller {
+        font-size: 40px;
+    }
 }
 h2.extra-bold {
     font-size: 79.02px;
@@ -50,6 +53,9 @@ a.read-more {
     color: #000;
     font-size: 20px;
     font-weight: 700;
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 5px;
     &:hover, &:focus {
         color: lighten(#000, 40%);
         text-decoration: none;

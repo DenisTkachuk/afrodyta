@@ -89,6 +89,7 @@
             position: relative;
         }
         .left {
+            z-index: 10;
             &::after {
                 content: "";
                 display: block;
@@ -103,7 +104,27 @@
                 -webkit-transform: rotate(-25deg); /* Chrome, Safari, Opera */
                 transform: rotate(-25deg);
             }
-
+        }
+        .right {
+            z-index: 9;
+            h2 {
+                text-align: right;
+                margin-top: 0;
+            }
+            > p {
+                padding-right: 48px;
+            }
+            &::after {
+                content: "";
+                display: block;
+                position: absolute;
+                width: 1000px;
+                height: 162px;
+                background: #f6f6f6;
+                top: 110px;
+                right: 87px;
+                z-index: 1;
+            }
         }
     }
 
